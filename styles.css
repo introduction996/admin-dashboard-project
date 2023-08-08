@@ -133,6 +133,7 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
+    padding: 0.5rem;
 }
 
 .widgets > h1{
