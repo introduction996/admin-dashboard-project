@@ -44,6 +44,8 @@ body {
     overflow: hidden;
 }
 
+
+/* media queries */
 @media screen and (max-width: 1200px) {
     :root {
         font-size: 7.5px;
@@ -121,12 +123,17 @@ body {
     }
 }
 
+
+
 .dashboard, #widgets1, #widgets2 {
     width: 100%;
 }
 
 .dashboard:hover, .widgets:hover {
     cursor: pointer;
+}
+
+.widgets:hover {
     background-color: rgb(12, 101, 184);
 }
 
@@ -168,6 +175,8 @@ body {
     fill: white;
 }
 
+
+
 #navbar {
     grid-area: nav;
     background: pink;
@@ -183,12 +192,11 @@ body {
     display: flex;
     gap: 2rem;
 
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin: 2rem
 }
 
 .nav-up-one {
-    flex: 3;
+    flex: 2;
 
     display: flex;
     align-items: center;
@@ -208,6 +216,7 @@ input[type='text'] {
     height: 4rem;
     border-radius: 2rem;
     background-color: rgb(214, 214, 214);
+    padding: 1rem;
 }
 
 input[type='text']:focus {
