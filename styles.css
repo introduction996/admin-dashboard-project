@@ -31,6 +31,8 @@ body {
 #sidebar {
     grid-area: side;
     background: rgb(14, 116, 212);
+
+    z-index: 2;
 }
 
 .container {
@@ -99,11 +101,14 @@ body {
 
 #navbar {
     grid-area: nav;
-    background: pink;
+    background: white;
 
     padding: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
+
+    box-shadow: 0 1px 10px grey;
+    z-index: 1;
 }
 
 .nav-icons {
@@ -140,7 +145,7 @@ input[type='text'] {
     width: 75%;
     height: 4rem;
     border-radius: 2rem;
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(226, 226, 226);
     padding: 1rem;
 }
 
