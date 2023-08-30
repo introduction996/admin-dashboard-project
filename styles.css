@@ -117,6 +117,11 @@ body {
     fill: black;
 }
 
+.nav-icons:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
 .nav-up {
     display: flex;
     gap: 2rem;
@@ -248,14 +253,52 @@ img[alt="pfp2"] {
 
 .content-card {
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
     padding-bottom: 3rem;
+    padding-top: 3rem;
     border-left: 1rem solid rgb(241, 177, 31);
     border-radius: 1rem;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    min-width: 100px;
+
+    overflow-y: scroll;
+}
+
+/* this just hides the cards' scrollbar */
+.content-card::-webkit-scrollbar {
+    display: none;
+}
+.content-card {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* ... */
+
+.card-text > h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+a {
+    font-weight: 600;
+}
+
+a:active {
+    color: rgb(0, 102, 255);
+}
+
+.card-text > h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: grey;
+}
+
+.card-text {
+    margin: 1rem;
 }
 
 
@@ -269,6 +312,14 @@ img[alt="pfp2"] {
     height: 3rem;
     aspect-ratio: auto;
     fill: black;
+
+    transition: fill;
+    transition-duration: .2s;
+}
+
+.card-icons > svg:hover {
+    cursor: pointer;
+    fill: rgb(241, 177, 31);
 }
 
 .content2 {
@@ -345,6 +396,10 @@ img[alt="pfp2"] {
 
     .nav-down-buttons {
         width: 75%;
+    }
+
+    .content2 {
+        display: none;
     }
 }
 
