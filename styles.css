@@ -114,7 +114,7 @@ body {
 .nav-icons {
     height: 3rem;
     aspect-ratio: auto;
-    fill-opacity: black;
+    fill: black;
 }
 
 .nav-up {
@@ -227,9 +227,52 @@ img[alt="pfp2"] {
     border-radius: 50%;
 }
 
+
+
 #content {
     grid-area: cont;
     background: lightblue;
+
+    display: flex;
+}
+
+.content1 {
+    flex: 2;
+
+    padding: 2rem;
+
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(4vh, 1fr))/repeat(auto-fit, minmax(20vw ,1fr));
+    gap: 2rem
+}
+
+.content-card {
+    background-color: white;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    border-left: 1rem solid rgb(241, 177, 31);
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.card-icons > svg {
+    height: 3rem;
+    aspect-ratio: auto;
+    fill: black;
+}
+
+.content2 {
+    flex: 1;
 }
 
 
