@@ -236,7 +236,7 @@ img[alt="pfp2"] {
 
 #content {
     grid-area: cont;
-    background: lightblue;
+    background: rgb(226, 232, 240);
 
     display: flex;
 }
@@ -344,7 +344,7 @@ a:active {
 
     display: flex;
     flex-direction: column;
-    gap: 3rem
+    gap: 5rem;
 }
 
 .announcements, .trending {
