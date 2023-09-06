@@ -337,6 +337,10 @@ a:active {
     flex: 1;
     padding: 2rem;
     padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem
 }
 
 .announcements, .trending {
@@ -379,6 +383,41 @@ a:active {
     color: grey;
 }
 
+#trend-card {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem
+}
+
+.dummy-user {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.dummy-user > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dummy-user-text > h3{
+    font-size: 2rem;
+}
+
+.dummy-user-text > h3:first-child {
+    font-weight: 600;
+}
+
+.dummy-user-text > h3:last-child {
+    font-weight: 400;
+    color: grey
+}
 
 
 
